@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% block title %}Login Page{% endblock %}
+
+{% block content %}
+<body name="body" id="invbody" onload="doShowAll()">
+	<h2>BeesButter Inventory Online Interface</h2>
+	<p>Please select product and quantity to add to cart.</p>
+	<form method="POST" name=ShoppingList id="Shopping" action="/results">
+		<div id="main">
+			<table>
+				<tr>
+
+					<td><b>Product:</b><select name=name>
+						<option value="Beard Balm" name="Beard Balm">Beard Balm</option>
+						<option value="Bergamont Geranium Body Balm" name="Bergamont Geranium Body Balm">Bergamont Geranium Body Balm</option>
+						<option value="Cedarwood Body Balm" name="Cedarwood Body Balm">Cedarwood Body Balm</option>
+						<option value="Cocao Lip Balm TIN" name="Cocao Lip Balm TIN">Cocao Lip Balm TIN</option>
+						<option value="Cocao Lip Balm TUBE" name="Cocao Lip Balm TUBE">Cocao Lip Balm TUBE</option>
+						<option value="Coconut Body Balm" name="Coconut Body Balm">Coconut Body Balm</option>
+						<option value="Coffee Scrub" name="Coffee Scrub">Coffee Scrub</option>
+						<option value="Grapefruit Lip Balm TIN" name="Grapefruit Lip Balm TIN">Grapefruit Lip Balm TIN</option>
+						<option value="Grapefruit Lip Balm TUBE" name="Grapefruit Lip Balm TUBE">Grapefruit Lip Balm TUBE</option>
+						<option value="Healing Face Oil" name="Healing Face Oil">Healing Face Oil</option>
+						<option value="Healing Face Salve" name="Healing Face Salve">Healing Face Salve</option>
+						<option value="Lavender Eucalyptus Body Balm" name="Lavender Eucalyptus Body Balm">Lavender Eucalyptus Body Balm</option>
+						<option value="Peppermint Lip Balm TIN" name="Peppermint Lip Balm TIN">Peppermint Lip Balm TIN</option>
+						<option value="Peppermint Lip Balm TUBE" name="Peppermint Lip Balm TUBE">Peppermint Lip Balm TUBE</option>
+						<option value="Restore Face Serum" name="Restore Face Serum">Restore Face Serum</option>
+						<option value="Tattoo Pop" name="Tattoo Pop">Tattoo Pop</option>
+
+					</select></td>
+					<td><b>Quantity:</b><input type=text name=data></td>
+
+				</tr>
+
+				<tr>
+					<td>
+					    <input type=button value="Save"   onclick="SaveItem()"> 
+					    <input type=button value="Update" onclick="ModifyItem()"> 
+					    <input type=button value="Delete" onclick="RemoveItem()">
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div id="items_table">
+			<h3>List of Products</h3>
+			<table id=list></table>
+			<p>
+				<label><input type=button value="Clear" onclick="ClearAll()">
+					<i>* Delete all items</i></label>
+            </p>
+			<input id="Calculate" class="btn btn-primary" type="button" onclick="cartsend2()" value="Calculate">
+		</div>
+	</form>
+	<form method="POST" id="List2" action="/results">
+		<div>
+			<input id="SneakValue" type=hidden name=data value=>
+		</div>
+	</form>
+</body>
+{% endblock %}
