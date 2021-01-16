@@ -2,15 +2,19 @@
 {% block title %}Login Page{% endblock %}
 
 {% block content %}
-<body name="body" id="invbody" onload="doShowAll()">
-	<h2>BeesButter Inventory Online Interface</h2>
+<body id="invbody" onload="doShowAll()">
+	<h2 class="header">BeesButter Inventory Online Interface</h2>
 	<p>Please select product and quantity to add to cart.</p>
 	<form method="POST" name=ShoppingList id="Shopping" action="/results">
 		<div id="main">
-			<table>
+			<table classname='producttable'>
+				<tr>
+					<th>Product</th>
+					<th>Quantity</th>
+				</tr>
 				<tr>
 
-					<td><b>Product:</b><select name=name>
+					<td ><b></b><select name=name class='dropdown'>
 						<option value="Beard Balm" name="Beard Balm">Beard Balm</option>
 						<option value="Bergamont Geranium Body Balm" name="Bergamont Geranium Body Balm">Bergamont Geranium Body Balm</option>
 						<option value="Cedarwood Body Balm" name="Cedarwood Body Balm">Cedarwood Body Balm</option>
@@ -29,32 +33,32 @@
 						<option value="Tattoo Pop" name="Tattoo Pop">Tattoo Pop</option>
 
 					</select></td>
-					<td><b>Quantity:</b><input type=text name=data></td>
+					<td><b></b><input type=text name=data class='ammount'></td>
 
 				</tr>
 
 				<tr>
-					<td>
-					    <input type=button value="Save"   onclick="SaveItem()"> 
-					    <input type=button value="Update" onclick="ModifyItem()"> 
-					    <input type=button value="Delete" onclick="RemoveItem()">
+					<td colspan="2" id="storage_buttons">
+					    <input type=button value="Add" style="background-color: #FFD300;" style="color: white;" style="cursor: pointer;" onclick="SaveItem()"> 
+					    <input type=button value="Update" style="background-color: #FFD300;" style="color: white;" style="cursor: pointer;" onclick="ModifyItem()"> 
+					    <input type=button value="Delete" style="background-color: #FFD300;" style="color: white;" style="cursor: pointer;" onclick="RemoveItem()">
 					</td>
 				</tr>
 			</table>
 		</div>
 		<div id="items_table">
-			<h3>List of Products</h3>
+			<h3>Tally Of Items Sold</h3>
 			<table id=list></table>
 			<p>
-				<label><input type=button value="Clear" onclick="ClearAll()">
+				<label><input type=button value="Clear" style="background-color: #FFD300;" style="color: white;" style="cursor: pointer;" onclick="ClearAll()">
 					<i>* Delete all items</i></label>
             </p>
-			<input id="Calculate" class="btn btn-primary" type="button" onclick="cartsend2()" value="Calculate">
+			<input id="Calculate" type="button" style="background-color: #FFD300;" style="color: white;" style="cursor: pointer;" onclick="cartsend2()" value="Calculate">
 		</div>
 	</form>
 	<form method="POST" id="List2" action="/results">
 		<div>
-			<input id="SneakValue" type=hidden name=data value=>
+			<input id="SneakValue" type=hidden name=data value=/>
 		</div>
 	</form>
 </body>
