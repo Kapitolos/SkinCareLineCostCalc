@@ -26,7 +26,6 @@ function SaveItem() {
 	doShowAll();
 	
 }
-//change an existing key=>value in the HTML5 storage
 function ModifyItem() {
 	var name1 = document.forms.ShoppingList.name.value;
 	var data1 = document.forms.ShoppingList.data.value;
@@ -44,7 +43,6 @@ function ModifyItem() {
 	doShowAll();
 }
 //-------------------------------------------------------------------------
-//delete an existing key=>value from the HTML5 storage
 function RemoveItem() {
 	var name = document.forms.ShoppingList.name.value;
 	document.forms.ShoppingList.data.value = localStorage.removeItem(name);
@@ -60,7 +58,7 @@ function ClearAll() {
 
 //--------------------------------------------------------------------------------------
 // dynamically populate the table with shopping list items
-//below step can be done via PHP and AJAX too. 
+
 function doShowAll() {
 	if (CheckBrowser()) {
 		var key = "";
@@ -77,7 +75,6 @@ function doShowAll() {
 			list += "<tr><td><i>empty</i></td>\n<td><i>empty</i></td></tr>\n";
 		}
 		//bind the data to html table
-		//you can use jQuery too....
 		document.getElementById('list').innerHTML = list;
 	} else {
 		alert('Cannot save shopping list as your browser does not support HTML 5');
@@ -86,7 +83,6 @@ function doShowAll() {
 
 function CheckBrowser() {
 	if ('localStorage' in window && window['localStorage'] !== null) {
-		// we can use localStorage object to store data
 		return true;
 	} else {
 			return false;

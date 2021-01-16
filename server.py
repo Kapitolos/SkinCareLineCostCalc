@@ -16,7 +16,7 @@ def login():
     if request.method == "POST":
         return render_template("results.html")
     else:
-        return render_template("login.html")
+        return render_template("tally.html")
 
 @app.route("/results", methods=["POST","GET"])
 def results():
