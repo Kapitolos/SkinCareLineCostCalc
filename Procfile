@@ -1,2 +1,2 @@
 web: set FLASK_APP=server.py
-flask run
+web: flask run
