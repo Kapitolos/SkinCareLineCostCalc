@@ -144,6 +144,7 @@ label {
 #list {
 	background: linear-gradient(to right, rgb(243, 207, 27), rgb(249, 251, 223));
 	padding: 25px;
+	border-style: double;
 }
 
 .flowers {
