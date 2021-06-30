@@ -1,5 +1,4 @@
 {% extends "base.html" %}
-{% block title %}Login Page{% endblock %}
 
 {% block content %}
 <body id="invbody" onload="doShowAll()">
@@ -36,12 +35,14 @@
 					<td><b></b><input type=text name=data class='ammount'></td>
 
 				</tr>
+				<img src="../static/images/logo.png" id='logo'></img>
+				<img src="../static/images/logo2.png" id='logo2'></img>
 
 				<tr>
 					<td colspan="2" id="storage_buttons">
-					    <input type=button value="Add" style="background-color: #FFD300;" style="color: white;" style="cursor: pointer;" onclick="SaveItem()"> 
-					    <input type=button value="Update" style="background-color: #FFD300;" style="color: white;" style="cursor: pointer;" onclick="ModifyItem()"> 
-					    <input type=button value="Delete" style="background-color: #FFD300;" style="color: white;" style="cursor: pointer;" onclick="RemoveItem()">
+					    <input class="beebutton" type=button value="Add"  onclick="SaveItem()"> 
+					    <input class="beebutton"  type=button value="Update" onclick="ModifyItem()"> 
+					    <input class="beebutton"  type=button value="Delete"  onclick="RemoveItem()">
 					</td>
 				</tr>
 			</table>
@@ -50,10 +51,10 @@
 			<h3>Tally Of Items Sold</h3>
 			<table id=list></table>
 			<p>
-				<label><input type=button value="Clear" style="background-color: #FFD300;" style="color: white;" style="cursor: pointer;" onclick="ClearAll()">
+				<label><input class="beebutton" type=button value="Clear" onclick="ClearAll()">
 					<i>* Delete all items</i></label>
             </p>
-			<input id="Calculate" type="button" style="background-color: #FFD300;" style="color: white;" style="cursor: pointer;" onclick="cartsend2()" value="Calculate">
+			<input id="Calculate" class="beebutton"  type="button" onclick="cartsend2()" value="Calculate">
 		</div>
 	</form>
 	<form method="POST" id="List2" action="/results">
