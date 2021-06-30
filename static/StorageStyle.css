@@ -17,6 +17,38 @@ body {
 	text-align:center;
 }
 
+.beebutton {
+	background-color: #FFD300;
+	color: black;
+	cursor: pointer;
+	border-radius: 10px 10px 10px 10px;
+}
+
+.beebutton:hover {
+	background-color: #fcdc40;
+}
+
+#returnbutton {
+    padding: 10px;
+    width: 15%;
+    font-size: 40pt;
+    margin-left: 40%;
+}
+
+#returnlink {
+	text-decoration: none;
+}
+
+#logo {
+	position: absolute;
+	margin-left: -45%;
+}
+
+#logo2 {
+	position: absolute;
+	margin-left: 20%;
+}
+
 #welcome {
 	margin-top: 10%;
 	text-align: center;
@@ -75,12 +107,17 @@ body {
 	transform: scaleX(0);
 	transition: 1s linear;
   }
+
   .text:hover:before,
   .text:focus:before {
 	visibility: visible;
 	transform: scaleX(1);
   }
 
+td {
+	text-align: center;
+}
+  
 td,th {
 	font-family: 'Cinzel', serif;
 	padding: 4px;
@@ -106,7 +143,6 @@ label {
 #main {
     border: 88px black;
     padding: 6px;
-    background-color: #fdfd5615;
     align-content: center;
 }
 

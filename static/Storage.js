@@ -62,7 +62,7 @@ function ClearAll() {
 function doShowAll() {
 	if (CheckBrowser()) {
 		var key = "";
-		var list = "<tr><th>Item</th><th>Value</th></tr>\n";
+		var list = "<tr><th>Item</th><th>Amount</th></tr>\n";
 		var i = 0;
 		//for more advance feature, you can set cap on max items in the cart
 		for (i = 0; i <= localStorage.length-1; i++) {
