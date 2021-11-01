@@ -194,3 +194,79 @@ label {
 #calculate {
 	padding: 6px;
 }
+
+
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2){
+
+#welcome {
+	margin-top: 50%;
+}
+
+
+#tallyheader {
+	margin-top: 35%;
+	font-size: 45pt;
+}
+
+#Shopping {
+	margin-top: 5%;
+}
+
+#producttable {
+	font-size: 45pt;
+}
+
+.dropdown {
+	font-size: 30pt;
+}
+.ammount {
+	font-size: 20pt;
+}
+
+#logo {
+	width: 20%;
+	margin-left: -51%;
+	margin-top: 18%;
+}
+#logo2 {
+	width: 20%;
+	margin-left: 30%;
+	margin-top: 18%;
+}
+
+#list {
+	font-size: 35pt;
+}
+
+.beebutton {
+	font-size: 34pt;
+}
+
+#resultstext {
+	margin-top: 40%;
+}
+#returnbutton {
+    padding: 28px;
+    width: 25%;
+    font-size: 47pt;
+    margin-left: 34%;
+}
+
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+	#welcome {
+		margin-top: 35%;
+	}
+	#tallyheader {
+		margin-top: 35%;
+	}
+
+}
