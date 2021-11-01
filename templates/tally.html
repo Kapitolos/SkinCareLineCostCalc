@@ -2,11 +2,11 @@
 
 {% block content %}
 <body id="invbody" onload="doShowAll()">
-	<h2 class="header">BeesButter Inventory Online Interface</h2>
+	<h2 class="header" id="tallyheader">BeesButter Inventory Online Interface</h2>
 	<p>Please select product and quantity to add to cart.</p>
 	<form method="POST" name=ShoppingList id="Shopping" action="/results">
 		<div id="main">
-			<table classname='producttable'>
+			<table classname='producttable' id="producttable">
 				<tr>
 					<th>Product</th>
 					<th>Quantity</th>
