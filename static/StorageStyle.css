@@ -205,7 +205,9 @@ label {
 #welcome {
 	margin-top: 50%;
 }
-
+#invbody {
+	margin-right:1%;
+}
 
 #tallyheader {
 	margin-top: 35%;
