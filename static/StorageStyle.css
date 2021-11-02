@@ -202,6 +202,15 @@ label {
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2){
 
+	body {
+		background: rgb(227, 236, 95);
+		font-family: 'Didact Gothic', sans-serif;
+		font-size: 20pt;
+	}
+	#items_table {
+		background: rgb(227, 236, 95);
+	}
+
 #welcome {
 	margin-top: 50%;
 }
