@@ -2,6 +2,7 @@
 
 {% block content %}
 <body id="invbody" onload="doShowAll()">
+	<div id="invcontainer">
 	<h2 class="header" id="tallyheader">BeesButter Inventory Online Interface</h2>
 	<p>Please select product and quantity to add to cart.</p>
 	<form method="POST" name=ShoppingList id="Shopping" action="/results">
@@ -62,5 +63,6 @@
 			<input id="SneakValue" type=hidden name=data value=/>
 		</div>
 	</form>
+	</div>
 </body>
 {% endblock %}
