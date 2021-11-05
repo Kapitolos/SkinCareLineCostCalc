@@ -1,0 +1,282 @@
+body {
+	background: linear-gradient(to right, rgb(243, 207, 27), rgb(249, 251, 223));
+	font-family: 'Didact Gothic', sans-serif;
+	font-size: 20pt;
+}
+
+.header {
+	text-decoration: underline;
+}
+
+#invcontainer {
+	font-family: 'Cinzel', serif;
+	text-align: -webkit-center;
+}
+
+#storage_buttons {
+	text-align:center;
+}
+
+.beebutton {
+	background-color: #FFD300;
+	color: black;
+	cursor: pointer;
+	border-radius: 10px 10px 10px 10px;
+}
+
+.beebutton:hover {
+	background-color: #fcdc40;
+}
+
+#returnbutton {
+    padding: 10px;
+    width: 15%;
+    font-size: 40pt;
+    margin-left: 40%;
+}
+
+#returnlink {
+	text-decoration: none;
+}
+
+#logo {
+	position: absolute;
+	margin-left: -45%;
+}
+
+#logo2 {
+	position: absolute;
+	margin-left: 20%;
+}
+
+#welcome {
+	margin-top: 10%;
+	text-align: center;
+	font-family:'Cinzel', serif;
+	font-size: 50pt;
+}
+
+.container {
+	position: relative;
+  }
+  
+  .image {
+	display: block;
+    position: relative;
+    border-radius: 95px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: -1;
+  }
+  
+  .overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	opacity: 0;
+	transition: 1s ease;
+	background-color:#FDFD5C55;
+  }
+  
+  .container:hover .overlay {
+	opacity: 1;
+  }
+  
+  .text {
+	color: white;
+	font-size: 60px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+  }
+
+  .text:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 3px;
+	bottom: 0;
+	left: 0;
+	background: #eef08e;
+	visibility: hidden;
+	border-radius: 5px;
+	transform: scaleX(0);
+	transition: 1s linear;
+  }
+
+  .text:hover:before,
+  .text:focus:before {
+	visibility: visible;
+	transform: scaleX(1);
+  }
+
+td {
+	text-align: center;
+}
+  
+td,th {
+	font-family: 'Cinzel', serif;
+	padding: 4px;
+}
+
+.producttable {
+	align-content: center;
+
+}
+
+.dropdown {
+	background-color: #FFE981;
+}
+
+.ammount {
+	background-color: #FFE981;
+}
+
+label {
+	vertical-align: top;
+}
+
+#main {
+    border: 88px black;
+    padding: 6px;
+    align-content: center;
+}
+
+#resultspage {
+	margin-top: 20%;
+	text-align: center;
+	font-family: 'Cinzel', serif;
+	font-size: 50pt;
+	overflow: hidden; 
+	white-space: normal; 
+	animation: 
+	  typing 1s steps(20, end),
+	  blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+	from { width: 0 }
+	to { width: 100% }
+  }
+  
+
+#items_table {
+	border: 10px bold black;
+	padding: 30px;
+	background: linear-gradient(to right, rgb(243, 207, 27), rgb(249, 251, 223));
+}
+
+#items_table h3 {
+	font-size: 18px;
+	margin-top: 0px;
+	font-family: 'Cinzel', serif;
+}
+
+#list {
+	background: linear-gradient(to right, rgb(243, 207, 27), rgb(249, 251, 223));
+	padding: 25px;
+	border-style: double;
+}
+
+.flowers {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -8%;
+    z-index: 2;
+}
+
+#calculate {
+	padding: 6px;
+}
+
+
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2){
+
+	body {
+		background: rgb(227, 236, 95);
+		font-family: 'Didact Gothic', sans-serif;
+		font-size: 20pt;
+	}
+	#items_table {
+		background: rgb(227, 236, 95);
+	}
+
+#welcome {
+	margin-top: 50%;
+}
+
+#tallyheader {
+	margin-top: 35%;
+	font-size: 45pt;
+}
+
+#Shopping {
+	margin-top: 5%;
+}
+
+#producttable {
+	font-size: 45pt;
+}
+
+.dropdown {
+	font-size: 30pt;
+}
+.ammount {
+	font-size: 20pt;
+}
+
+#logo {
+    width: 15%;
+    margin-left: -41%;
+    margin-top: 18%;
+	position: fixed;
+}
+#logo2 {
+    width: 15%;
+    margin-left: 27%;
+    margin-top: 18%;
+	position: fixed;
+}
+
+#list {
+	font-size: 35pt;
+}
+
+.beebutton {
+	font-size: 34pt;
+}
+
+#resultstext {
+	margin-top: 40%;
+}
+#returnbutton {
+    padding: 28px;
+    width: 25%;
+    font-size: 47pt;
+    margin-left: 34%;
+}
+
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+	#welcome {
+		margin-top: 35%;
+	}
+	#tallyheader {
+		margin-top: 35%;
+	}
+
+}
